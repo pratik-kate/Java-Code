@@ -1,7 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CodeJava</string>
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="learn">Learn</string>
     <string name="quiz">quiz</string>
     <string name="about">About</string>

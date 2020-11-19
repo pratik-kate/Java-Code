@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/learn"
+        android:title="Learn"
+        android:icon="@drawable/ic_learn" />
+    <item android:id="@+id/quiz"
+        android:title="Quiz"
+        android:icon="@drawable/ic_quiz" />
+    <item android:id="@+id/info"
+        android:title="About"
+        android:icon="@drawable/ic_info" />
+    <item android:id="@+id/share"
+        android:title="Share"
+        android:icon="@drawable/ic_share" />
+</menu>
