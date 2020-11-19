@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FDFFFC"
     tools:context=".MainActivity">
 
 
@@ -21,8 +22,10 @@
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_gravity="start"
+        android:layout_gravity="center"
         android:background="@drawable/background_navbar"
+        app:itemIconTint="@android:color/primary_text_dark_nodisable"
+        app:itemTextColor="?android:attr/textColorSecondaryNoDisable"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

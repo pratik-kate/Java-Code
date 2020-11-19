@@ -4,6 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -14,6 +17,8 @@ import com.pratikcodes.codejava.fragments.LearnFragment;
 import com.pratikcodes.codejava.fragments.QuizFragment;
 import com.pratikcodes.codejava.fragments.ShareFragment;
 
+import java.io.File;
+
 public class MainActivity extends AppCompatActivity{
 
     BottomNavigationView nav;
@@ -22,7 +27,7 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        getSupportActionBar().hide();
         nav = findViewById(R.id.navigation);
 
         nav.setOnNavigationItemSelectedListener(navListner);
@@ -58,4 +63,6 @@ public class MainActivity extends AppCompatActivity{
                         return true;
                     }
                 };
+
+
 }
