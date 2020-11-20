@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CodeJava</string>
+    <string name="app_name">Java Code</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="learn">Learn</string>
@@ -9,4 +9,9 @@
     <string name="image">image</string>
     <string name="share_dec">Share JAVA CODE App With Your Friends</string>
     <string name="contact_us">contact us</string>
+    <string name="app_description">This App Is For Students Who Wants To Get Started With Java And Wants To Improve Their Skills.</string>
+    <string name="developer_contact">Developer Contact</string>
+    <string name="pratik_softwares">PRATIK SOFTWARES</string>
+    <string name="website">pratik-softwares.business.site</string>
+    <string name="email">codes.pratik@gmail.com</string>
 </resources>
