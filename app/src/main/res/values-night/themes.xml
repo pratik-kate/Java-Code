@@ -1,10 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.CodeJava" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.CodeJava" parent="Theme.AppCompat.DayNight">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">#ED1C24</item>
+        <item name="colorPrimaryVariant">#ED1C24</item>
+        <item name="colorOnPrimary">#000000</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
@@ -12,5 +12,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">#ED1C24</item>
         <!-- Customize your theme here. -->
+
     </style>
 </resources>

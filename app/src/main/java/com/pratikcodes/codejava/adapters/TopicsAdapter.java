@@ -1,6 +1,7 @@
 package com.pratikcodes.codejava.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,8 +11,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.pratikcodes.codejava.MainActivity;
 import com.pratikcodes.codejava.R;
 import com.pratikcodes.codejava.models.TopicsModel;
+import com.pratikcodes.codejava.topics.IntroActivity;
 
 import java.util.ArrayList;
 
@@ -46,6 +49,23 @@ public class TopicsAdapter extends RecyclerView.Adapter<TopicsAdapter.viewHolder
 
         holder.image.setImageResource(model.getImage());
         holder.text.setText(model.getName());
+
+        holder.image.setOnClickListener(v -> {
+
+            final Intent intent;
+            switch (position){
+                case 0:
+
+                    intent =  new Intent(context, IntroActivity.class);
+                    break;
+
+                default:
+                    intent = new Intent(context, MainActivity.class);
+                    break;
+            }
+            context.startActivity(intent);
+
+        });
 
 
     }

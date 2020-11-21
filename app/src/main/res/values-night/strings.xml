@@ -16,4 +16,7 @@
     <string name="topics">Topics</string>
     <string name="programs">Programs</string>
     <string name="pratiksoftwares">{ PRATIK SOFTWARES }</string>
+    <string name="history">History</string>
+    <string name="features">Features</string>
+    <string name="jvm">JVM</string>
 </resources>
