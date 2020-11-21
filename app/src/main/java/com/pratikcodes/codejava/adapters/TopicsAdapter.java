@@ -63,8 +63,8 @@ public class TopicsAdapter extends RecyclerView.Adapter<TopicsAdapter.viewHolder
 
             super(itemView);
 
-            image = itemView.findViewById(R.id.programImage);
-            text = itemView.findViewById(R.id.ProgramName);
+            image = itemView.findViewById(R.id.TopicImage);
+            text = itemView.findViewById(R.id.topicname);
         }
 
     }

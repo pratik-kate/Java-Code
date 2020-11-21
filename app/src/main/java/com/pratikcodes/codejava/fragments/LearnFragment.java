@@ -36,11 +36,27 @@ public class LearnFragment extends Fragment {
         programs = view.findViewById(R.id.listPrograms);
         ArrayList<TopicsModel> list = new ArrayList<>();
 
-        list.add(new TopicsModel(R.drawable.java,"topic1"));
-        list.add(new TopicsModel(R.drawable.java,"topic1"));
-        list.add(new TopicsModel(R.drawable.java,"topic1"));
-        list.add(new TopicsModel(R.drawable.java,"topic1"));
-        list.add(new TopicsModel(R.drawable.java,"topic1"));
+        list.add(new TopicsModel(R.drawable.introduction,"Introduction"));
+        list.add(new TopicsModel(R.drawable.setup,"Setup"));
+        list.add(new TopicsModel(R.drawable.helloworld,"Hello World"));
+        list.add(new TopicsModel(R.drawable.datatypes,"Data Types"));
+        list.add(new TopicsModel(R.drawable.operators,"Operators"));
+        list.add(new TopicsModel(R.drawable.array,"Arrays"));
+        list.add(new TopicsModel(R.drawable.inputoutput,"Input And Output"));
+        list.add(new TopicsModel(R.drawable.conditions,"If-Else"));
+        list.add(new TopicsModel(R.drawable.swith,"Switch"));
+        list.add(new TopicsModel(R.drawable.loop,"Looping Controls"));
+        list.add(new TopicsModel(R.drawable.classobject,"Classes And Objects"));
+        list.add(new TopicsModel(R.drawable.constructor,"Constructors"));
+        list.add(new TopicsModel(R.drawable.pak,"Packages"));
+        list.add(new TopicsModel(R.drawable.datetime,"Date And Time"));
+        list.add(new TopicsModel(R.drawable.inheritance,"Inheritance"));
+        list.add(new TopicsModel(R.drawable.interfac,"Interfaces"));
+        list.add(new TopicsModel(R.drawable.objclone,"Object Cloning"));
+        list.add(new TopicsModel(R.drawable.strings,"Strings"));
+        list.add(new TopicsModel(R.drawable.exception,"Exception Handling"));
+        list.add(new TopicsModel(R.drawable.filehandle,"File Handling"));
+        list.add(new TopicsModel(R.drawable.ui,"User Interface"));
 
 
         TopicsAdapter adapter = new TopicsAdapter(list,getContext());

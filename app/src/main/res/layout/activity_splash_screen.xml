@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_cards"
+    android:background="#ED1C24"
     tools:context=".SplashScreen">
 
     <ImageView

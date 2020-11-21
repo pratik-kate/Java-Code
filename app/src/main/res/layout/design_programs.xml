@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="350dp"
+    android:layout_width="300dp"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -10,23 +10,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        app:cardBackgroundColor="#ED1C24"
         app:cardCornerRadius="30dp">
 
         <ImageView
-            android:id="@+id/programImage"
+            android:id="@+id/TopicImage"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginBottom="30dp"
             android:contentDescription="@string/image"
-            android:scaleType="fitXY"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@drawable/introduction" />
 
         <TextView
-            android:id="@+id/ProgramName"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:id="@+id/topicname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/aclonica"
             android:text="@android:string/paste"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
     </androidx.cardview.widget.CardView>
 </LinearLayout>
