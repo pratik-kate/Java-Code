@@ -17,6 +17,7 @@ import com.pratikcodes.codejava.R;
 import com.pratikcodes.codejava.fragments.AboutFragment;
 import com.pratikcodes.codejava.fragments.FeaturesFragment;
 import com.pratikcodes.codejava.fragments.HistoryFragment;
+import com.pratikcodes.codejava.fragments.JvmFragment;
 import com.pratikcodes.codejava.fragments.LearnFragment;
 import com.pratikcodes.codejava.fragments.QuizFragment;
 import com.pratikcodes.codejava.fragments.ShareFragment;
@@ -57,16 +58,12 @@ public class IntroActivity extends AppCompatActivity {
                         case R.id.features:
                             selected = new FeaturesFragment();
                             break;
-//                        case R.id.info:
-//                            selected = new AboutFragment();
-//                            break;
-//                        case R.id.share:
-//                            selected = new ShareFragment();
-//                            break;
-
+                        case R.id.jvm:
+                            selected = new JvmFragment();
+                            break;
 
                     }
-                    getSupportFragmentManager().beginTransaction().replace(R.id.introscreen,selected).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.introscreen,selected).commit();
                     return true;
                 }
             };
