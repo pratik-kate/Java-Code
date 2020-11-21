@@ -19,4 +19,11 @@
     <string name="history">History</string>
     <string name="features">Features</string>
     <string name="jvm">JVM</string>
+    <string name="introduction">Introduction</string>
+    <string name="_1_simple">1. Simple:</string>
+    <string name="object_oriented">2. Object Oriented</string>
+    <string name="_3_robust">3. Robust</string>
+    <string name="_4_platform_independent">4. Platform Independent</string>
+    <string name="_5_secure">5. Secure</string>
+    <string name="_6_multi_threading">6. Multi Threading</string>
 </resources>

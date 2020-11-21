@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.CodeJava" parent="Theme.AppCompat.DayNight">
+    <style name="Theme.CodeJava" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#ED1C24</item>
         <item name="colorPrimaryVariant">#ED1C24</item>
