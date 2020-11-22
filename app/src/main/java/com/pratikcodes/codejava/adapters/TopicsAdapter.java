@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.pratikcodes.codejava.MainActivity;
 import com.pratikcodes.codejava.R;
 import com.pratikcodes.codejava.models.TopicsModel;
+import com.pratikcodes.codejava.topics.DatatypesActivity;
 import com.pratikcodes.codejava.topics.HelloworldActivity;
 import com.pratikcodes.codejava.topics.IntroActivity;
 import com.pratikcodes.codejava.topics.SetupActivity;
@@ -65,6 +66,9 @@ public class TopicsAdapter extends RecyclerView.Adapter<TopicsAdapter.viewHolder
                     break;
                 case 2:
                     intent = new Intent(context, HelloworldActivity.class);
+                    break;
+                case 3:
+                    intent = new Intent(context, DatatypesActivity.class);
                     break;
                 default:
                     intent = new Intent(context, MainActivity.class);
