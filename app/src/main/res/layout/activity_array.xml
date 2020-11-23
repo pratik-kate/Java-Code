@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".topics.OperatorsActivity">
+    tools:context=".topics.ArrayActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar4"
@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Operators"
+        app:title="Arrays"
         app:titleTextColor="#FFFFFF" />
 
     <ScrollView
@@ -43,7 +43,7 @@
                 android:layout_marginEnd="10dp"
                 android:fontFamily="@font/aclonica"
                 android:gravity="center"
-                android:text="Operators In Java"
+                android:text="@string/arrays_in_java"
                 android:textColor="@color/master"
                 android:textSize="24sp" />
 
@@ -55,7 +55,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
                 android:gravity="center"
-                android:text="Operator is a symbol which tells to the compiler to perform some operation. Java provides a rich set of operators do deal with various types of operations."
+                android:text="An array is a collection of similar data types. Array is a container object that hold values of homogeneous type. It is also known as static data structure because size of an array must be specified at the time of its declaration."
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
@@ -64,9 +64,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="Java operators can be divided into following categories:"
+                android:gravity="center"
+                android:text="Array starts from zero index and goes to n-1 where n is length of the array."
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
@@ -74,10 +75,11 @@
                 android:id="@+id/textView88"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="30dp"
-                android:text="1.Arithmetic operators \n2.Relation operators \n3.Logical operators \n4.Bitwise operators \n5.Assignment operators \n6.Conditional operators"
+                android:gravity="center"
+                android:text="Array can be single dimensional or multidimensional in Java."
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
@@ -88,66 +90,54 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
-                android:text="1.Arithmetic operators"
+                android:text="Features of Array"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView90"
+                android:id="@+id/textView91"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="Arithmetic operators are used to perform arithmetic operations like: addition, subtraction etc and helpful to solve mathematical expressions. The below table contains Arithmetic operators."
+                android:text="1.It is always indexed. Index begins from 0."
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
-            <ImageView
-                android:id="@+id/imageView20"
-                android:layout_width="wrap_content"
-                android:layout_height="323dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:contentDescription="@string/image"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/loperators" />
-
             <TextView
-                android:id="@+id/textView103"
+                android:id="@+id/textView93"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="10dp"
-                android:text="2.Relation operators"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView94"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="Relational operators are used to test comparison between operands or values. It can be use to test whether two values are equal or not equal or less than or greater than etc."
+                android:text="2.It is a collection of similar data types."
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
-            <ImageView
-                android:id="@+id/imageView22"
+            <TextView
+                android:id="@+id/textView95"
                 android:layout_width="match_parent"
-                android:layout_height="323dp"
-                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:contentDescription="@string/image"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/roperators" />
+                android:text="3.It occupies a contiguous memory location."
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView97"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="4.It allows to access elements randomly."
+                android:textColor="#000000"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView99"
@@ -156,7 +146,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
-                android:text="3.Logical operators"
+                android:text="Single Dimensional Array"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -165,23 +155,34 @@
                 android:id="@+id/textView100"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="Logical Operators are used to check conditional expression. For example, we can use logical operators in if statement to evaluate conditional based expression. We can use them into loop as well to evaluate a condition."
+                android:text="Single dimensional array use single index to store elements. You can get all the elements of array by just increment its index by one."
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
-            <ImageView
-                android:id="@+id/imageView23"
+            <TextView
+                android:id="@+id/textView109"
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:contentDescription="@string/image"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/aoperators" />
+                android:text="Syntax:"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView110"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="datatype[] arrayName; \nor \ndatatype arrayName[];"
+                android:textColor="#000000"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView101"
@@ -190,7 +191,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
-                android:text="4.Bitwise operators"
+                android:text="Multi-Dimensional Array"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -199,92 +200,34 @@
                 android:id="@+id/textView102"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="Bitwise operators are used to perform operations bit by bit.  Java defines several bitwise operators that can be applied to the integer types long, int, short, char and byte."
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:id="@+id/imageView24"
-                android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:contentDescription="@string/image"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/boperators" />
-
-            <TextView
-                android:id="@+id/textView104"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="10dp"
-                android:text="5.Assignment Operators"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView105"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:text="Assignment operators are used to assign a value to a variable. It can also be used combine with arithmetic operators to perform arithmetic operations and then assign the result to the variable. Assignment operator supported by Java are as follows:"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:id="@+id/imageView25"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:contentDescription="@string/image"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/asoperators" />
-
-            <TextView
-                android:id="@+id/textView106"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="10dp"
-                android:text="6.Conditional operator"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView107"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:text="It is also known as ternary operator because it works with three operands. It is short alternate of if-else statement. It can be used to evaluate Boolean expression and return either true or false value"
+                android:text="A multi-dimensional array is very much similar to a single dimensional array. It can have multiple rows and multiple columns unlike single dimensional array, which can have only one row index.  It represent data into tabular form in which data is stored into row and columns."
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView108"
+                android:id="@+id/textView111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Syntax:"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView112"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="epr1 ? expr2 : expr3"
+                android:text="datatype[ ][ ] arrayName;"
                 android:textColor="#000000"
                 android:textSize="18sp" />
-
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

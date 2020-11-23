@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.pratikcodes.codejava.MainActivity;
 import com.pratikcodes.codejava.R;
 import com.pratikcodes.codejava.models.TopicsModel;
+import com.pratikcodes.codejava.topics.ArrayActivity;
 import com.pratikcodes.codejava.topics.DatatypesActivity;
 import com.pratikcodes.codejava.topics.HelloworldActivity;
 import com.pratikcodes.codejava.topics.IntroActivity;
@@ -71,8 +72,11 @@ public class TopicsAdapter extends RecyclerView.Adapter<TopicsAdapter.viewHolder
                 case 3:
                     intent = new Intent(context, DatatypesActivity.class);
                     break;
-                    case 4:
+                case 4:
                     intent = new Intent(context, OperatorsActivity.class);
+                    break;
+                case 5:
+                    intent = new Intent(context, ArrayActivity.class);
                     break;
                 default:
                     intent = new Intent(context, MainActivity.class);
@@ -90,7 +94,7 @@ public class TopicsAdapter extends RecyclerView.Adapter<TopicsAdapter.viewHolder
         return list.size();
     }
 
-    public class viewHolder extends RecyclerView.ViewHolder {
+    public static class viewHolder extends RecyclerView.ViewHolder {
 
         ImageView image;
         TextView text;
