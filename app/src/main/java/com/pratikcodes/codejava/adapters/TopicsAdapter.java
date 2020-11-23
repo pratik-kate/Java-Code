@@ -17,6 +17,7 @@ import com.pratikcodes.codejava.models.TopicsModel;
 import com.pratikcodes.codejava.topics.DatatypesActivity;
 import com.pratikcodes.codejava.topics.HelloworldActivity;
 import com.pratikcodes.codejava.topics.IntroActivity;
+import com.pratikcodes.codejava.topics.OperatorsActivity;
 import com.pratikcodes.codejava.topics.SetupActivity;
 
 import java.util.ArrayList;
@@ -69,6 +70,9 @@ public class TopicsAdapter extends RecyclerView.Adapter<TopicsAdapter.viewHolder
                     break;
                 case 3:
                     intent = new Intent(context, DatatypesActivity.class);
+                    break;
+                    case 4:
+                    intent = new Intent(context, OperatorsActivity.class);
                     break;
                 default:
                     intent = new Intent(context, MainActivity.class);
