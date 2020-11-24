@@ -53,4 +53,7 @@
     <string name="step6">Step6:</string>
     <string name="data_types_in_java">Data Types In Java</string>
     <string name="arrays_in_java">Arrays In Java</string>
+    <string name="cmd">cmd</string>
+    <string name="buffered">Buffered</string>
+    <string name="scanner">Scanner</string>
 </resources>

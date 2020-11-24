@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cmd"
+        android:icon="@drawable/ic_cmd"
+        android:title="@string/cmd" />
+    <item
+        android:id="@+id/buffered"
+        android:icon="@drawable/ic_buffered"
+        android:title="@string/buffered" />
+    <item
+        android:id="@+id/scanner"
+        android:icon="@drawable/ic_scanner"
+        android:title="@string/scanner" />
+</menu>

@@ -5,24 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
-import android.app.ActionBar;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.LinearLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pratikcodes.codejava.R;
-import com.pratikcodes.codejava.fragments.AboutFragment;
 import com.pratikcodes.codejava.fragments.FeaturesFragment;
 import com.pratikcodes.codejava.fragments.HistoryFragment;
 import com.pratikcodes.codejava.fragments.JvmFragment;
-import com.pratikcodes.codejava.fragments.LearnFragment;
-import com.pratikcodes.codejava.fragments.QuizFragment;
-import com.pratikcodes.codejava.fragments.ShareFragment;
-
-import java.util.Objects;
 
 public class IntroActivity extends AppCompatActivity {
 
@@ -33,7 +23,7 @@ public class IntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-        nav = findViewById(R.id.intronav);
+        nav = findViewById(R.id.ionav);
         tool = findViewById(R.id.toolbar);
         setSupportActionBar(tool);
         //setting default screen for introduction fragment
