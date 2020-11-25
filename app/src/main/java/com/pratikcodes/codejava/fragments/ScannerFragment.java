@@ -10,18 +10,16 @@ import android.view.ViewGroup;
 
 import com.pratikcodes.codejava.R;
 
+public class ScannerFragment extends Fragment {
 
-public class CmdFragment extends Fragment {
 
-    public CmdFragment() {
+    public ScannerFragment() {
         // Required empty public constructor
     }
 
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cmd, container, false);
+        return inflater.inflate(R.layout.fragment_scanner, container, false);
     }
 }

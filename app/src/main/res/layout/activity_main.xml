@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDFFFC"
+    android:background="@color/bg"
     tools:context=".MainActivity">
 
 
@@ -13,10 +13,13 @@
         android:id="@+id/screen"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:clipToPadding="false"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
@@ -24,8 +27,9 @@
         android:layout_height="56dp"
         android:layout_gravity="center"
         android:background="@drawable/background_navbar"
-        app:itemIconTint="@android:color/primary_text_dark_nodisable"
-        app:itemTextColor="?android:attr/textColorSecondaryNoDisable"
+        android:backgroundTint="#00FFFFFF"
+        app:itemIconTint="@color/slave"
+        app:itemTextColor="@color/slave"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -3,6 +3,7 @@ package com.pratikcodes.codejava.fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -78,10 +79,11 @@ public class LearnFragment extends Fragment {
         ProgramsAdapter adapter1 = new ProgramsAdapter(list2,getContext());
         programs.setAdapter(adapter1);
 
-        LinearLayoutManager layout1 = new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false);
+//        LinearLayoutManager layout1 = new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false);
+//        programs.setLayoutManager(layout1);
+
+        GridLayoutManager layout1 = new GridLayoutManager(getContext(),2,GridLayoutManager.HORIZONTAL,false);
         programs.setLayoutManager(layout1);
-
-
         return view;
     }
 }

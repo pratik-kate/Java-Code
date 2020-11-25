@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".topics.IOActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -16,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Introduction"
+        app:title="Input And Output"
         app:titleTextColor="#FFFFFF" />
 
     <ScrollView
@@ -30,7 +31,7 @@
         <LinearLayout
             android:id="@+id/ioscreen"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical" />
     </ScrollView>
 
@@ -40,8 +41,9 @@
         android:layout_height="56dp"
         android:layout_gravity="center"
         android:background="@drawable/background_navbar"
-        app:itemIconTint="@android:color/primary_text_dark_nodisable"
-        app:itemTextColor="?android:attr/textColorSecondaryNoDisable"
+        app:itemIconTint="@color/slave"
+        app:itemTextAppearanceInactive="@style/TextAppearance.MaterialComponents.Body2"
+        app:itemTextColor="@color/slave"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

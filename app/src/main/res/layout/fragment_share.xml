@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/bg"
     tools:context=".fragments.ShareFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -32,6 +32,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="-5dp"
+            android:backgroundTint="@color/bg"
+            android:backgroundTintMode="src_over"
             android:contentDescription="@string/image"
             android:src="@drawable/design_share"
             app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +83,7 @@
             android:foregroundGravity="center"
             android:gravity="center"
             android:text="@string/share_dec"
-            android:textColor="#000000"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"

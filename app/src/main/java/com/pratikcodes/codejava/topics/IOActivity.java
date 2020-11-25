@@ -12,6 +12,9 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pratikcodes.codejava.R;
+import com.pratikcodes.codejava.fragments.BufferedFragment;
+import com.pratikcodes.codejava.fragments.CmdFragment;
+import com.pratikcodes.codejava.fragments.ScannerFragment;
 
 public class IOActivity extends AppCompatActivity {
 
@@ -25,6 +28,9 @@ public class IOActivity extends AppCompatActivity {
         tool = findViewById(R.id.iotool);
         setSupportActionBar(tool);
 
+        CmdFragment fragment = new CmdFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.ioscreen,fragment).commit();
+
         nav.setOnNavigationItemSelectedListener(listner);
 
 
@@ -35,10 +41,13 @@ public class IOActivity extends AppCompatActivity {
         switch (item.getItemId())
         {
             case R.id.cmd:
+                selected = new CmdFragment();
                 break;
             case R.id.buffered:
+                selected = new BufferedFragment();
                 break;
             case R.id.scanner:
+                selected = new ScannerFragment();
                 break;
 
         }
