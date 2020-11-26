@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.WhileFragment">
-
+    tools:context=".fragments.DoFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +17,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/aclonica"
             android:gravity="center"
-            android:text="@string/While"
+            android:text="@string/do_while"
             android:textColor="@color/master"
             android:textSize="30sp" />
 
@@ -30,9 +29,22 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
             android:gravity="center"
-            android:text="while loop is used to execute code repeatedly. a control statement. It is used for iterating a part of the program several times. When the number of iteration is not fixed then while loop is used."
+            android:text="In Java, the do-while loop is used to execute statements again and again. This loop executes at least once because the loop is executed before the condition is checked. It means loop condition evaluates after executing of loop body."
             android:textColor="#000000"
             android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView155"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="The main difference between while and do-while loop is, in do while loop condition evaluates after executing the loop."
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/textView153"
@@ -53,7 +65,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
-            android:text="while(condition)\n{\n\t\t//code;\n}"
+            android:text="do\n{\n\t\t//code;\n}while(condition);"
             android:textColor="@color/master"
             android:textSize="18sp" />
 
@@ -70,13 +82,13 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imageView28"
+            android:id="@+id/imageView30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:scaleType="fitXY"
-            android:src="@drawable/whileeg" />
+            android:src="@drawable/doeg" />
 
         <TextView
             android:id="@+id/textView156"
@@ -86,9 +98,8 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
             android:gravity="center"
-            android:text="In this example, we are using while loop to print 1 to 6 values. In first step, we set conditional variable then test the condition and if condition is true execute the loop body and increment the variable by 1."
+            android:text="In this example, we are printing values from 10 to 20 by using the do while loop."
             android:textColor="#000000"
             android:textSize="18sp" />
     </LinearLayout>
-
 </FrameLayout>

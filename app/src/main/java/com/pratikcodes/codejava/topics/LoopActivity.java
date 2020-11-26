@@ -13,6 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pratikcodes.codejava.R;
 import com.pratikcodes.codejava.fragments.AboutFragment;
+import com.pratikcodes.codejava.fragments.DoFragment;
 import com.pratikcodes.codejava.fragments.QuizFragment;
 import com.pratikcodes.codejava.fragments.ShareFragment;
 import com.pratikcodes.codejava.fragments.WhileFragment;
@@ -42,7 +43,7 @@ public class LoopActivity extends AppCompatActivity {
                     selected = new WhileFragment();
                     break;
                 case R.id.iddo:
-                    selected = new AboutFragment();
+                    selected = new DoFragment();
                     break;
                 case R.id.idfor:
                     selected = new ShareFragment();
