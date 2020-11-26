@@ -59,4 +59,5 @@
     <string name="buffered">Buffered</string>
     <string name="scanner">Scanner</string>
     <string name="command_line_arguments">Command Line Arguments</string>
+    <string name="buffered_reader">Buffered Reader</string>
 </resources>

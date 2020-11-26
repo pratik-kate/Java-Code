@@ -3,13 +3,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/white"
     tools:context=".fragments.BufferedFragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/buffered"
-        android:textColor="#000000" />
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView119"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="@string/buffered_reader"
+                android:textColor="@color/master"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView121"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="The BufferedReader class of Java is used to read the stream of characters from the specified source (character-input stream). The constructor of this class accepts an InputStream object as a parameter."
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView122"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="This class provides a method named read() and readLine() which reads and returns the character and next line from the source (respectively) and returns them."
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView123"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Steps to accept input using Buffered Reader:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView124"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="1.Instantiate an InputStreamReader class bypassing your InputStream object as a parameter.  \n\n2.Then, create a BufferedReader, bypassing the above obtained InputStreamReader object as a parameter.  \n\n3.Now, read data from the current reader as String using the readLine() or read() method."
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView125"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Example:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/image"
+                android:scaleType="fitXY"
+                android:src="@drawable/buffeg" />
+
+            <TextView
+                android:id="@+id/textView126"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:text="NOTE:  Buffered Reader Only Accepts the String Input. So if we want integer of float inputs we need to use Wrapper Classes respectively."
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>
