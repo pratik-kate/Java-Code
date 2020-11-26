@@ -84,7 +84,7 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imageView27"
+                android:id="@+id/buffeg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/image"
