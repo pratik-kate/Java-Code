@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/idwhile"
+        android:icon="@drawable/ic_loopitems"
+        android:title="@string/While" />
+    <item
+        android:id="@+id/iddo"
+        android:icon="@drawable/ic_loopitems"
+        android:title="@string/do_while" />
+    <item
+        android:id="@+id/idfor"
+        android:icon="@drawable/ic_loopitems"
+        android:title="@string/For" />
+</menu>

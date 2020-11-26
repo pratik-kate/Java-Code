@@ -7,4 +7,43 @@
     android:background="#FFFFFF"
     tools:context=".topics.LoopActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/looptool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Loops"
+        app:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/loopnav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/looptool">
+
+        <LinearLayout
+            android:id="@+id/loopscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/loopnav"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_navbar"
+        app:itemIconTint="@color/slave"
+        app:itemTextColor="@color/slave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/loop_nav_menue" />
 </androidx.constraintlayout.widget.ConstraintLayout>

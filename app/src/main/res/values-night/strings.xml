@@ -58,4 +58,9 @@
     <string name="scanner">Scanner</string>
     <string name="command_line_arguments">Command Line Arguments</string>
     <string name="buffered_reader">Buffered Reader</string>
+
+    <string name="do_while">do-while</string>
+    <string name="While">while</string>
+    <string name="For">for</string>
+
 </resources>
