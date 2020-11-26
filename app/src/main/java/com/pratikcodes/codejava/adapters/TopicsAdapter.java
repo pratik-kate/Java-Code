@@ -2,6 +2,7 @@ package com.pratikcodes.codejava.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.SweepGradient;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,7 @@ import com.pratikcodes.codejava.topics.IfElseActivity;
 import com.pratikcodes.codejava.topics.IntroActivity;
 import com.pratikcodes.codejava.topics.OperatorsActivity;
 import com.pratikcodes.codejava.topics.SetupActivity;
+import com.pratikcodes.codejava.topics.SwitchActivity;
 
 import java.util.ArrayList;
 
@@ -85,6 +87,9 @@ public class TopicsAdapter extends RecyclerView.Adapter<TopicsAdapter.viewHolder
                     break;
                 case 7:
                     intent = new Intent(context, IfElseActivity.class);
+                    break;
+                case 8:
+                    intent = new Intent(context, SwitchActivity.class);
                     break;
                 default:
                     intent = new Intent(context, MainActivity.class);
