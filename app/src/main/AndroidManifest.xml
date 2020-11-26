@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CodeJava">
-        <activity android:name=".topics.SwitchActivity"></activity>
+        <activity android:name=".topics.LoopActivity"></activity>
+        <activity android:name=".topics.SwitchActivity" />
         <activity android:name=".topics.IfElseActivity" />
         <activity android:name=".topics.IOActivity" />
         <activity android:name=".topics.ArrayActivity" />
