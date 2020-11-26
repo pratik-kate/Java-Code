@@ -14,6 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pratikcodes.codejava.R;
 import com.pratikcodes.codejava.fragments.AboutFragment;
 import com.pratikcodes.codejava.fragments.DoFragment;
+import com.pratikcodes.codejava.fragments.ForFragment;
 import com.pratikcodes.codejava.fragments.QuizFragment;
 import com.pratikcodes.codejava.fragments.ShareFragment;
 import com.pratikcodes.codejava.fragments.WhileFragment;
@@ -29,6 +30,8 @@ public class LoopActivity extends AppCompatActivity {
 
         tool = findViewById(R.id.looptool);
         nav = findViewById(R.id.loopnav);
+        WhileFragment fragment = new WhileFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.loopscreen,fragment).commit();
 
         nav.setOnNavigationItemSelectedListener(listner);
     }
@@ -46,7 +49,7 @@ public class LoopActivity extends AppCompatActivity {
                     selected = new DoFragment();
                     break;
                 case R.id.idfor:
-                    selected = new ShareFragment();
+                    selected = new ForFragment();
                     break;
 
             }
