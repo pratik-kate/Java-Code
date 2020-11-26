@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CodeJava">
-        <activity android:name=".topics.IOActivity"></activity>
+        <activity android:name=".topics.IfElseActivity"></activity>
+        <activity android:name=".topics.IOActivity" />
         <activity android:name=".topics.ArrayActivity" />
         <activity android:name=".topics.OperatorsActivity" />
         <activity android:name=".topics.DatatypesActivity" />
