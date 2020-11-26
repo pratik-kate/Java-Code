@@ -15,6 +15,7 @@ import com.pratikcodes.codejava.R;
 import com.pratikcodes.codejava.fragments.AboutFragment;
 import com.pratikcodes.codejava.fragments.QuizFragment;
 import com.pratikcodes.codejava.fragments.ShareFragment;
+import com.pratikcodes.codejava.fragments.WhileFragment;
 
 public class LoopActivity extends AppCompatActivity {
 
@@ -38,7 +39,7 @@ public class LoopActivity extends AppCompatActivity {
             switch (item.getItemId())
             {
                 case R.id.idwhile:
-                    selected = new QuizFragment();
+                    selected = new WhileFragment();
                     break;
                 case R.id.iddo:
                     selected = new AboutFragment();
