@@ -16,6 +16,7 @@ import com.pratikcodes.codejava.MainActivity;
 import com.pratikcodes.codejava.R;
 import com.pratikcodes.codejava.models.TopicsModel;
 import com.pratikcodes.codejava.topics.ArrayActivity;
+import com.pratikcodes.codejava.topics.ClassesActivity;
 import com.pratikcodes.codejava.topics.DatatypesActivity;
 import com.pratikcodes.codejava.topics.HelloworldActivity;
 import com.pratikcodes.codejava.topics.IOActivity;
@@ -94,6 +95,9 @@ public class TopicsAdapter extends RecyclerView.Adapter<TopicsAdapter.viewHolder
                     break;
                 case 9:
                     intent = new Intent(context, LoopActivity.class);
+                    break;
+                case 10:
+                    intent = new Intent(context, ClassesActivity.class);
                     break;
                 default:
                     intent = new Intent(context, MainActivity.class);

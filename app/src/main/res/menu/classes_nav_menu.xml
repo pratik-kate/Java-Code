@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/idclass"
+        android:icon="@drawable/ic_group"
+        android:title="@string/classes" />
+    <item
+        android:id="@+id/idobject"
+        android:icon="@drawable/ic_obj"
+        android:title="@string/object" />
+    <item
+        android:id="@+id/idwrapper"
+        android:icon="@drawable/ic_wrapper"
+        android:title="@string/wrapper" />
+</menu>
