@@ -65,5 +65,6 @@
     <string name="object">Object</string>
     <string name="wrapper">Wrapper</string>
     <string name="classes">Classes</string>
+    <string name="wrapper_classes">Wrapper Classes</string>
 
 </resources>
