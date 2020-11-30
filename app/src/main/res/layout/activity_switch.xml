@@ -98,6 +98,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
+                android:layout_marginBottom="70dp"
                 android:text="switch(condition)\n{\n\t\tcase 1:\n\t\t{\n\t\t\t\t//code for case1;\n\t\t\t\tbreak;\n\t\t}\n\t\tcase 2:\n\t\t{\n\t\t\t\t//code for case2;\n\t\t\t\tbreak;\n\t\t}\n\t\t\t\t.\n\t\t\t\t.\n\t\t\t\t.\n\t\tdefault:\n\t\t{\n\t\t\t\t//code for default case;\n\t\t\t\tbreak;\n\t\t}\n}"
                 android:textColor="@color/master"
                 android:textSize="18sp" />

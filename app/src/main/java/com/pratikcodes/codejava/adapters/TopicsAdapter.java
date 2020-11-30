@@ -49,7 +49,6 @@ public class TopicsAdapter extends RecyclerView.Adapter<TopicsAdapter.viewHolder
              );
 
 
-
         return new viewHolder(view);
     }
 

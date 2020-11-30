@@ -66,11 +66,14 @@ public class LearnFragment extends Fragment {
 
         ArrayList<ProgramsModel> list2 = new ArrayList<>();
 
-        list2.add(new ProgramsModel(R.drawable.java,"program1"));
-        list2.add(new ProgramsModel(R.drawable.java,"program"));
-        list2.add(new ProgramsModel(R.drawable.java,"program"));
-        list2.add(new ProgramsModel(R.drawable.java,"program"));
-        list2.add(new ProgramsModel(R.drawable.java,"program"));
+        list2.add(new ProgramsModel(R.drawable.basic,"Basic Programs"));
+        list2.add(new ProgramsModel(R.drawable.pattern,"Patterns"));
+        list2.add(new ProgramsModel(R.drawable.inputoutput,"I/O Programs"));
+        list2.add(new ProgramsModel(R.drawable.array,"Arrays"));
+        list2.add(new ProgramsModel(R.drawable.conditions,"Conditionals"));
+        list2.add(new ProgramsModel(R.drawable.loop,"Looping"));
+        list2.add(new ProgramsModel(R.drawable.classobject,"Classes"));
+        list2.add(new ProgramsModel(R.drawable.datetime,"Date Time"));
 
 
         ProgramsAdapter adapter1 = new ProgramsAdapter(list2,getContext());
