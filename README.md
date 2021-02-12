@@ -12,8 +12,5 @@
 ## Learn Object Oriented Concepts
 <img src="oops.jpg" height=500>
 
-## Challange Yourself By Taking Quiz
-<img src="quiz.jpg" height=500>
-
 ## Share JAVA Code With Your Friends
 <img src="share.jpg" height=500>
